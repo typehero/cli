@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log("Hello World!");
+import { execSync } from "child_process";
+
+execSync("npx tsx index.ts", { stdio: "inherit" });
